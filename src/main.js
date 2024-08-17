@@ -45,6 +45,7 @@ const onSearchFormEl = event => {
 
       galleryEl.innerHTML = galleryCardsTemplate;
       formEl.reset();
+      finishLoader();
       const lightbox = new SimpleLightbox('.js-gallery a', {
         captionsData: 'alt',
         captionDelay: 250,
